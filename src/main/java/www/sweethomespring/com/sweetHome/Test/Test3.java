@@ -12,6 +12,6 @@ public class Test3 {
 	@RequestMapping(value = "/test3", method = RequestMethod.GET, produces="text/plain")
     @ResponseBody
     public String greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        return "Hello World 2";
+        return "Hello World 3";
     }
 }
