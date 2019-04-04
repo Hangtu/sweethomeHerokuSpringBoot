@@ -28,4 +28,14 @@ public class TopicService {
 	public void addTopic(Topic topic) {
 		topics.add(topic);
 	}
+
+	public void updateTopic(int id, Topic topic) {
+		 for (Topic element : topics) {
+			   if (element.getId() == (id)) {
+			     topics.set(topics.indexOf(element), topic);
+			   }
+		 }
+	}
+	
+	
 }
